@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry | KrazyCare Drug Store</title>
+    <meta name="description" content="Make an enquiry about KrazyCare Drug Store products and healthcare services.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <img src="images/Picture 5.png" alt="KrazyCare Drug Store logo">
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="news.html">News</a>
+                <a href="enquiry.html" class="active">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Make an Enquiry</h1>
+
+            <h3>Luxury Healthcare, Redefined.</h3>
+
+            <p>
+                Have a question about our products or healthcare services?
+                Complete the enquiry form below and KrazyCare Drug Store
+                will provide you with relevant information.
+            </p>
+        </section>
+
+        <section>
+            <h2>Product & Service Enquiry</h2>
+
+            <form id="enquiryForm" class="contact-form">
+
+                <div class="form-group">
+                    <label for="enquiryName">Full Name</label>
+                    <input
+                        type="text"
+                        id="enquiryName"
+                        name="enquiryName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="enquiryEmail"
+                        name="enquiryEmail"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryType">Enquiry Type</label>
+
+                    <select id="enquiryType" name="enquiryType" required>
+                        <option value="">Select an enquiry type</option>
+                        <option value="product">Product Availability</option>
+                        <option value="service">Healthcare Service</option>
+                        <option value="prescription">Prescription Support</option>
+                        <option value="skincare">Luxury Skincare</option>
+                        <option value="wellness">Wellness & Supplements</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryMessage">Your Enquiry</label>
+
+                    <textarea
+                        id="enquiryMessage"
+                        name="enquiryMessage"
+                        rows="6"
+                        placeholder="Enter your enquiry here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+            <div id="enquiryResponse" class="cta" style="display: none;">
+                <h2>Enquiry Received</h2>
+                <p id="responseMessage"></p>
+            </div>
+
+        </section>
+
+        <section class="cta">
+
+            <h2>Need General Assistance?</h2>
+
+            <p>
+                If you would like to send us a general message rather than
+                enquire about a product or service, please use our contact form.
+            </p>
+
+            <a href="contact.html" class="btn">Contact KrazyCare</a>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 KrazyCare Drug Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
